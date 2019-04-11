@@ -1,0 +1,15 @@
+{
+    "name": "readyship/readyship-elementor-ultimate-post-list-template",
+    "description": "A WordPress Plugin that enable to create post list template with Elementor Page Builder",
+    "type": "wordpress-plugin",
+    "require": {
+        "twig/twig": "^3.3"
+    },
+    "license": "GPL v2 or later",
+    "authors": [
+        {
+            "name": "kwbtdisk",
+            "email": "k.daisuke6262@gmail.com"
+        }
+    ]
+}
