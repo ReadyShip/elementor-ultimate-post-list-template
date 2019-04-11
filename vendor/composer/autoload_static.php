@@ -21,6 +21,10 @@ class ComposerStaticInited3095b40f01a5988178e37760e9988a
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'M' => 
+        array (
+            'Miya\\WP\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -36,6 +40,10 @@ class ComposerStaticInited3095b40f01a5988178e37760e9988a
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Miya\\WP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/miya/gh-auto-updater/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -44,6 +52,13 @@ class ComposerStaticInited3095b40f01a5988178e37760e9988a
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
+        'P' => 
+        array (
+            'Parsedown' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
         ),
     );

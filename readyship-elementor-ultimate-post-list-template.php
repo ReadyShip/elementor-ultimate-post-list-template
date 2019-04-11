@@ -143,6 +143,10 @@ if ( ! class_exists( 'RS_Elementor_Ultimate_Post_List_Template' ) ) {
 		public function init_rseuplt_widgets() {
 			$this->load_vendor();
 			require_once( RS_EUPLT_PATH . 'includes/class-rseuplt-load-widgets.php' );
+			if (is_admin()) {
+				// Check updates
+				$this->activate_autoupdate();
+			}
 		}
 
 		public function register_elementor_template_type_post_list () {
@@ -177,6 +181,14 @@ if ( ! class_exists( 'RS_Elementor_Ultimate_Post_List_Template' ) ) {
 				$location = 'single';
 			}
 			return $template;
+		}
+
+		// Enable autoupdate with Github public repo https://github.com/ReadyShip/elementor-ultimate-post-list-template
+		private function activate_autoupdate() {
+			$plugin_slug = plugin_basename( __FILE__ );
+			$gh_user = 'ReadyShip';
+			$gh_repo = 'elementor-ultimate-post-list-template';
+			new Miya\WP\GH_Auto_Updater( $plugin_slug, $gh_user, $gh_repo );
 		}
 
 	}

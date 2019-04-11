@@ -4,8 +4,92 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d73a8e8f0c7b24adba40ed73fc621463",
+    "content-hash": "220a79a287489d34238d9c120e82628c",
     "packages": [
+        {
+            "name": "erusev/parsedown",
+            "version": "1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
+                "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2019-03-17T18:48:37+00:00"
+        },
+        {
+            "name": "miya/gh-auto-updater",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miya0001/gh-auto-updater.git",
+                "reference": "b190c6f2740788957a3a7e18a00ddbcfd219e7d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miya0001/gh-auto-updater/zipball/b190c6f2740788957a3a7e18a00ddbcfd219e7d9",
+                "reference": "b190c6f2740788957a3a7e18a00ddbcfd219e7d9",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Miya\\WP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL v2"
+            ],
+            "authors": [
+                {
+                    "name": "miya0001",
+                    "email": "miya@wpist.me"
+                }
+            ],
+            "time": "2017-02-13T01:00:48+00:00"
+        },
         {
             "name": "symfony/polyfill-ctype",
             "version": "v1.10.0",

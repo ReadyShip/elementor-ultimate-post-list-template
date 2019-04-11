@@ -3,7 +3,8 @@
     "description": "A WordPress Plugin that enable to create post list template with Elementor Page Builder",
     "type": "wordpress-plugin",
     "require": {
-        "twig/twig": "^3.3"
+        "twig/twig": "^2.5.0",
+        "miya/gh-auto-updater": "^1.0"
     },
     "license": "GPL v2 or later",
     "authors": [
