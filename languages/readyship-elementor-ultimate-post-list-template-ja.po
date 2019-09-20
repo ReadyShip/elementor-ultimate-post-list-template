@@ -1,11 +1,9 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: ReadyShip Elementor Ultimate Post List Template\n"
 "POT-Creation-Date: 2019-09-20 15:11+0900\n"
-"PO-Revision-Date: 2019-09-20 15:10+0900\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2019-09-20 17:02+0900\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,213 +14,222 @@ msgstr ""
 "X-Poedit-WPHeader: readyship-elementor-ultimate-post-list-template.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: ja\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: includes/class-elementor-library-documents-post-list.php:65
 msgid "Ultimate Post List Template"
-msgstr ""
+msgstr "Ultimate Post List Template"
 
 #: includes/column-override.php:32
 msgid "Extended"
-msgstr ""
+msgstr "拡張"
 
 #: includes/column-override.php:41
 msgid "Link"
-msgstr ""
+msgstr "リンク"
 
 #: includes/column-override.php:43
 msgid "https://your-link.com"
-msgstr ""
+msgstr "https://your-link.com"
 
 #: widgets/rseuplt-blog.php:45
 msgid "Layout"
-msgstr ""
+msgstr "レイアウト"
 
 #: widgets/rseuplt-blog.php:53
 msgid "Select Template"
-msgstr ""
+msgstr "テンプレートを選択"
 
 #: widgets/rseuplt-blog.php:54
 msgid "Please Select List Template"
-msgstr ""
+msgstr "リストテンプレートを選択してください"
 
 #: widgets/rseuplt-blog.php:64
 msgid "Or put Post ID"
-msgstr ""
+msgstr "またはPost IDを指定"
 
 #: widgets/rseuplt-blog.php:65
 msgid "Or you can specify Post ID directly"
-msgstr ""
+msgstr "または、ポスト ID を直接指定することもできます。"
 
 #: widgets/rseuplt-blog.php:85
 msgid "Rendering with Timber"
-msgstr ""
+msgstr "Timberを利用したレンダリング"
 
 #: widgets/rseuplt-blog.php:87
 msgid "Replace rendering strategy with using Timber plugin"
-msgstr ""
+msgstr "Timberプラグインを使って、レンダリング戦略を置き換えます"
 
 #: widgets/rseuplt-blog.php:97
 msgid "Add Link?"
-msgstr ""
+msgstr "リンクの追加"
 
 #: widgets/rseuplt-blog.php:112
 msgid "Number of Columns"
-msgstr ""
+msgstr "カラム数"
 
 #: widgets/rseuplt-blog.php:138
 msgid "Spacing (Item Padding)"
-msgstr ""
+msgstr "間隔 (項目間のパディング)"
 
 #: widgets/rseuplt-blog.php:158
 msgid "Masonry"
-msgstr ""
+msgstr "Masonry"
 
 #: widgets/rseuplt-blog.php:172
 msgid "Query"
-msgstr ""
+msgstr "クエリ"
 
 #: widgets/rseuplt-blog.php:180
 msgid "Post Types"
-msgstr ""
+msgstr "投稿タイプ"
 
 #: widgets/rseuplt-blog.php:191
 msgid "Categories"
-msgstr ""
+msgstr "カテゴリー"
 
 #: widgets/rseuplt-blog.php:193
 msgid "Select the categories you want to show"
-msgstr ""
+msgstr "表示するカテゴリを選択する"
 
 #: widgets/rseuplt-blog.php:203
 msgid "Posts Per Page"
-msgstr ""
+msgstr "ページあたりの投稿"
 
 #: widgets/rseuplt-blog.php:204
 msgid "Choose how many posts do you want to be displayed per page"
-msgstr ""
+msgstr "ページごとに表示する投稿の数を選択します。"
 
 #: widgets/rseuplt-blog.php:214
 msgid "Offset Count"
-msgstr ""
+msgstr "オフセットのカウント"
 
 #: widgets/rseuplt-blog.php:215
 msgid "The index of post to start with"
-msgstr ""
+msgstr "で始まる投稿のインデックス"
 
 #: widgets/rseuplt-blog.php:225
 msgid "Order By"
-msgstr ""
+msgstr "ソート基準"
 
 #: widgets/rseuplt-blog.php:228
 msgid "No order"
-msgstr ""
+msgstr "並び替えしない"
 
 #: widgets/rseuplt-blog.php:229
 msgid "Post ID"
-msgstr ""
+msgstr "投稿ID"
 
 #: widgets/rseuplt-blog.php:230
 msgid "Author"
-msgstr ""
+msgstr "登録者"
 
 #: widgets/rseuplt-blog.php:231
 msgid "Title"
-msgstr ""
+msgstr "タイトル"
 
 #: widgets/rseuplt-blog.php:232
 msgid "Published date"
-msgstr ""
+msgstr "公開日"
 
 #: widgets/rseuplt-blog.php:233
 msgid "Modified date"
-msgstr ""
+msgstr "更新日"
 
 #: widgets/rseuplt-blog.php:234
 msgid "By parent"
-msgstr ""
+msgstr "親 ID"
 
 #: widgets/rseuplt-blog.php:235
 msgid "Random order"
-msgstr ""
+msgstr "ランダム順"
 
 #: widgets/rseuplt-blog.php:236
 msgid "Comment count"
-msgstr ""
+msgstr "コメント数"
 
 #: widgets/rseuplt-blog.php:237
 msgid "Menu order"
-msgstr ""
+msgstr "メニューの並び順"
 
 #: widgets/rseuplt-blog.php:238
 msgid "By include order"
-msgstr ""
+msgstr "インクルード順"
 
 #: widgets/rseuplt-blog.php:247
 msgid "Order"
-msgstr ""
+msgstr "昇順/降順"
 
 #: widgets/rseuplt-blog.php:250
 msgid "Ascending"
-msgstr ""
+msgstr "昇順"
 
 #: widgets/rseuplt-blog.php:251
 msgid "Descending"
-msgstr ""
+msgstr "降順"
 
 #: widgets/rseuplt-blog.php:263 widgets/rseuplt-blog.php:268
 msgid "Pagination"
-msgstr ""
+msgstr "ページネーションスタイル"
 
 #: widgets/rseuplt-blog.php:270
 msgid "Pagination is the process of dividing the posts into discrete pages"
-msgstr ""
+msgstr "ページネーションは、投稿を個別のページに分割するプロセスです。"
 
 #: widgets/rseuplt-blog.php:276
 msgid "Text for \"Next > \" link"
-msgstr ""
+msgstr "\"次へ >\" リンクのテキスト"
 
 #: widgets/rseuplt-blog.php:283
 msgid "Text for \"Previous > \" link"
-msgstr ""
+msgstr "\"前へ >\" リンクのテキスト"
 
 #: widgets/rseuplt-blog.php:293
 msgid "Normal"
-msgstr ""
+msgstr "ノーマル"
 
 #: widgets/rseuplt-blog.php:298 widgets/rseuplt-blog.php:332
 msgid "Color"
-msgstr ""
+msgstr "色"
 
 #: widgets/rseuplt-blog.php:311 widgets/rseuplt-blog.php:345
 msgid "Background Color"
-msgstr ""
+msgstr "背景色"
 
 #: widgets/rseuplt-blog.php:326
 msgid "Hover"
-msgstr ""
+msgstr "ホバー"
+
+#: widgets/rseuplt-blog.php:326
+msgid "Showing %2$d - %3$d of %1$d"
+msgstr "全 %1$d 件中 %2$d - %3$d件を表示中"
 
 #. Plugin Name of the plugin/theme
 msgid "ReadyShip Elementor Ultimate Post List Template"
-msgstr ""
+msgstr "ReadyShip Elementor Ultimate Post List Template"
 
 #. Plugin URI of the plugin/theme
 msgid "https://readyship.co/"
-msgstr ""
+msgstr "https://readyship.co/"
 
 #. Description of the plugin/theme
 msgid ""
 "Enables to Build Post List (Archive) Template with Elementor Page Builder. "
 "You can create completely flexble layouts. Twig integration included."
 msgstr ""
+"Elementor ページビルダーを使用して投稿リスト (アーカイブ) テンプレートをビ"
+"ルドできます。検索・ページネーションに対応しており、完全に柔軟なレイアウト"
+"を作成できます。Twigレンダリングに対応しています。"
 
 #. Author of the plugin/theme
 msgid "ReadyShip"
-msgstr ""
+msgstr "ReadyShip"
 
 #. Author URI of the plugin/theme
 msgid "http://readyship.co/opensource"
-msgstr ""
+msgstr "http://readyship.co/opensource"
