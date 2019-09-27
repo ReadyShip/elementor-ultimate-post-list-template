@@ -64,15 +64,9 @@ if ( ! class_exists( 'RS_Elementor_Ultimate_Post_List_Template' ) ) {
 				return $docsManagerInstance;
 			});
 
-//			add_action( 'elementor/elements/elements_registered', function( ) {
-//				require_once( RS_EUPLT_PATH . 'includes/column-override.php' );
-//				\Elementor\Plugin::$instance->elements_manager->unregister_element_type('column');
-//				\Elementor\Plugin::$instance->elements_manager->register_element_type(new \Elementor\Element_Column_Extended());
-//			} );
 
 			add_filter( 'template_include', [ $this, 'template_include' ], 11 ); // 11 = after WooCommerce.
 
-//			 add_action( 'elementor/init', array( $this, 'register_elementor_template_type_post_list' ) );
 
 			// Load Elementor Widgets
 			add_action( 'init', array( $this, 'init_rseuplt_widgets' ), - 999 );
@@ -89,7 +83,6 @@ if ( ! class_exists( 'RS_Elementor_Ultimate_Post_List_Template' ) ) {
 			$this->load_domain();
 
 			$this->init_files();
-//			$this->register_elementor_template_type_post_list();
 		}
 
 		/**

@@ -106,7 +106,8 @@ class RSEUPLT_Render_Post_List {
             return false; // Post not found or empty
         }
         $query = $_GET['query'];
-        $this->posts     = $this->wpQuery->query(array_merge($this->get_posts_args, $_GET['query'] ?: []));
+        $query = apply_filters('rseuplt_postlist_query', $query);
+        $this->posts     = $this->wpQuery->query(array_merge($this->get_posts_args, $query ?: []));
         $output          = '';
         $additionalStyle = '';
 
@@ -265,14 +266,15 @@ class RSEUPLT_Render_Post_List {
         ];
         $new_div      = $templateHtmlDom->createElement('div');
         foreach ($iterateTaxos as $label => $ta) {
-            $tagContainer = $finder->query("//*[contains(concat(' ', normalize-space(@class), ' '), ' __foreach_$label ')]");
-            if ($tagContainer->length > 0) {
-                foreach ($tagContainer as $tc) {
+            $tagContainers = $finder->query("//*[contains(concat(' ', normalize-space(@class), ' '), ' __foreach_$label ')]");
+            if ($tagContainers->length > 0) {
+                foreach ($tagContainers as $tc) {
                     //Clone our created div
                     $new_div_clone = $new_div->cloneNode();
                     $new_div_clone->appendChild($templateHtmlDom->createTextNode("\n {% for $ta[0] in post.$label %} \n"));
                     //Replace image with this wrapper div
                     $tc->parentNode->replaceChild($new_div_clone, $tc);
+                    $tc->setAttribute('style', 'margin-bottom: 0 !important;'. $tc->getAttribute('style'));
                     //Append this image to wrapper div
                     $new_div_clone->appendChild($tc);
                     $new_div_clone->appendChild($templateHtmlDom->createTextNode("\n {% endfor %} \n "));
