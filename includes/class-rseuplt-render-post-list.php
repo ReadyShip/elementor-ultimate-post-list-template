@@ -151,21 +151,21 @@ class RSEUPLT_Render_Post_List {
         return $res;
     }
 
-    public static function renderPostWithTemplate($post, $templateHtml, $rendering_mode = 'twig', $list_item_is_linked = false, $list_item_class = '', $twigInstance = null, $loop_index = false) {
+    public static function renderPostWithTemplate($post, $templateHtml, $rendering_mode = 'twig', $list_item_is_linked = false, $list_item_class = '', $twigInstance = null, $loop_index = false, $isPostObject = true) {
         // set tags if template references
         $additionalStyle = '';
-        if (strpos($templateHtml, 'post.categories') !== false) {
+        if ($isPostObject && strpos($templateHtml, 'post.categories') !== false) {
             $post->categories = wp_get_post_categories($post->ID, array('fields' => 'all'));
         }
 
         // set tags if template references
-        if (strpos($templateHtml, 'post.tags') !== false) {
+        if ($isPostObject && strpos($templateHtml, 'post.tags') !== false) {
             $post->tags = wp_get_post_tags($post->ID, array('fields' => 'all'));
         }
 
 
         // set custom_taxonomies if template refer
-        if (strpos($templateHtml, 'post.taxonomies.') && $taxs = preg_match_all('post\.custom_taxonomies\.(.+)?\.', $templateHtml)) {
+        if ($isPostObject && strpos($templateHtml, 'post.taxonomies.') && $taxs = preg_match_all('post\.custom_taxonomies\.(.+)?\.', $templateHtml)) {
             $terms            = wp_get_post_terms($post->ID, $taxs, array('fields' => 'all'));
             $post->taxonomies = array();
             foreach ($terms as $t) {
@@ -327,7 +327,7 @@ class RSEUPLT_Render_Post_List {
           . '</div>';
     }
 
-    public static function renderWithTemplateIdAndGlobalPostObject($templateId) {
+    public static function renderWithTemplateIdAndGlobalPostObject($templateId, $rendering_mode = 'twig', $list_item_is_linked = false, $list_item_class = '', $twigInstance = null, $loop_index = false, $isPostObject = true) {
         global $post;
         $templateHtml = \RSEUPLTemplate\RSEUPLT_Render_Post_List::generateTemplateHtml($templateId);
         $rendered = \RSEUPLTemplate\RSEUPLT_Render_Post_List::renderPostWithTemplate($post, $templateHtml);
