@@ -3,7 +3,7 @@
 Plugin Name: ReadyShip Elementor Ultimate Post List Template
 Description: Enables to Build Post List (Archive) Template with Elementor Page Builder. You can create completely flexble layouts. Twig integration included.
 Plugin URI: https://readyship.co/
-Version: 1.1.2
+Version: 1.1.3
 Author: ReadyShip
 Author URI: http://readyship.co/opensource
 Text Domain: readyship-elementor-ultimate-post-list-template
