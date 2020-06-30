@@ -336,7 +336,7 @@ class RSEUPLT_Render_Post_List {
     public static function renderWithTemplateIdAndGlobalPostObject($templateId, $rendering_mode = 'twig', $list_item_is_linked = false, $list_item_class = '', $twigInstance = null, $loop_index = false, $isPostObject = true) {
         global $post;
         $templateHtml = \RSEUPLTemplate\RSEUPLT_Render_Post_List::generateTemplateHtml($templateId);
-        $rendered = \RSEUPLTemplate\RSEUPLT_Render_Post_List::renderPostWithTemplate($post, $templateHtml);
+        $rendered = \RSEUPLTemplate\RSEUPLT_Render_Post_List::renderPostWithTemplate($post, $templateHtml, $rendering_mode, $list_item_is_linked, $list_item_class, $twigInstance, $loop_index, $isPostObject);
         return '<style>' . $rendered['css'] . '</style>' . $rendered['html'];
     }
 
