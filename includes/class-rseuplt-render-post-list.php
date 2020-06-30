@@ -220,15 +220,21 @@ class RSEUPLT_Render_Post_List {
           '#post_permalink'          => get_permalink($post->ID),
           '_rs_el_post_thumbmail_bg' => '_rs_el_post_thumbmail_bg _rs_el_post_thumbmail_bg--' . $post->ID,
           '#category_link'           => get_category_link($categories[0]->cat_ID) // TODO: termlink
-            // TODO: thumbnail image
         );
+		$imgUrl = null;
+        if (strpos($templateHtml, '#_rs_el_post_thumbmail_url') !== false) {
+			$imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
+			$replaces['#_rs_el_post_thumbmail_url'] = $imgUrl;
+		}
 
         // Replace links etc
         $tmp_output = str_replace(array_keys($replaces), array_values($replaces), $tmp_output);
 
         if (strpos($templateHtml, '_rs_el_post_thumbmail_bg') !== false) {
             // col or section or normal widget
-            $imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
+			if(!$imgUrl) {
+				$imgUrl = get_the_post_thumbnail_url($post->ID, 'large');
+			}
             if ($imgUrl) {
                 $additionalStyle = '._rs_el_post_thumbmail_bg--' . $post->ID . ', ._rs_el_post_thumbmail_bg--' . $post->ID . ' > .elementor-element-populated,._rs_el_post_thumbmail_bg--' . $post->ID . ' > .elementor-widget-container{background-image:url(' . get_the_post_thumbnail_url($post->ID, 'large') . ') !important;}';
             }
